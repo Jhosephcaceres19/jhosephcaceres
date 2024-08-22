@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-black via-sky-900 to-sky-600 text-white">
       <Navbar />
-      <div className=" inset-0 flex flex-col mt-30 gap-4 lg:gap-0 md:mt-0 justify-center text-start w-full items-center lg:flex-row-reverse md:content-center">
+      <div className=" inset-0 flex flex-col mt-30 gap-4 lg:gap-0 md:mt-0 md:absolute justify-center text-start w-full items-center lg:flex-row-reverse md:content-center">
         <div>
           <Image
             src={
