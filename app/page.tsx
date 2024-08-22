@@ -14,8 +14,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-black via-sky-900 to-sky-600 text-white">
       <Navbar />
-
-      <div className="absolute inset-0 flex flex-col mt-20 gap-4 lg:gap-0 md:mt-0 justify-center text-start w-full items-center lg:flex-row-reverse md:content-center">
+      <div className=" inset-0 flex flex-col mt-30 gap-4 lg:gap-0 md:mt-0 justify-center text-start w-full items-center lg:flex-row-reverse md:content-center">
         <div>
           <Image
             src={
@@ -24,7 +23,7 @@ export default function Home() {
             width={200}
             height={200}
             alt="Jose Caceres Aramayo"
-            className="rounded-full md:w-[300px] lg:rounded-lg xl:w-[400px]"
+            className="rounded-full mt-36 md:w-[300px] lg:rounded-lg xl:w-[400px]"
           />
         </div>
         <div className="flex flex-col  text-center justify-center gap-4 lg:w-[60%] lg:text-start ">
@@ -52,7 +51,7 @@ export default function Home() {
             necesidades del usuario, enfocándome en resolver problemas y
             optimizar el rendimiento en cada proyecto.
           </p>
-          <div className="flex gap-4 justify-center mt-4 lg:justify-start">
+          <div className="flex gap-4 pb-4 justify-center mt-4 lg:justify-start">
             <a
               href="https://www.instagram.com/jhoseph_caceres19/"
               target="_blank"
