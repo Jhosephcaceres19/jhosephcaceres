@@ -16,7 +16,7 @@ export default function Navbar() {
       </div>
 
       {/* Sidebar para pantallas pequeñas */}
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <Sidebar />
       </div>
 
