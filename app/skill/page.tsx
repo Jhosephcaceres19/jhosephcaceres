@@ -11,7 +11,7 @@ export default function page() {
         <div className="mt-20">
           <section className="dark:bg-gray-100 dark:text-gray-800">
             <div className="container flex flex-col-reverse  mx-auto lg:flex-row">
-              <div className="flex flex-col px-6 py-8 items-center justify-center space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-violet-600 dark:text-gray-50">
+              <div className="flex flex-col px-6 py-8 items-center justify-center space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5">
                 <h1 className={`${coiny.className} text-2xl`}>Habilidades:</h1>
                 <div className="flex space-x-2 sm:space-x-4">
                   <svg
@@ -72,7 +72,7 @@ export default function page() {
                   </div>
                 </div>
               </div>
-              <div className="lg:w-1/2 xl:w-3/5 dark:bg-gray-100">
+              <div className="lg:w-1/2 xl:w-3/5">
                 <div className="flex items-center justify-center p-4 md:p-8 lg:p-12">
                   <Image
                     src={"https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg"}
@@ -85,7 +85,7 @@ export default function page() {
               </div>
             </div>
           </section>
-          <section className="dark:bg-gray-100 dark:text-gray-800">
+          <section className="">
             <div className="container p-6 mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
               <h2 className="text-3xl font-bold">Lenguaje de Programacion</h2>
               <div className="flex flex-wrap justify-center lg:justify-between">
@@ -164,7 +164,7 @@ export default function page() {
               </div>
             </div>
           </section>
-          <section className="dark:bg-gray-100 dark:text-gray-800">
+          <section className="">
             <div className="container p-6 mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
               <h2 className="text-3xl font-bold">Framework y Librerias</h2>
               <div className="flex flex-wrap justify-center gap-4">

@@ -23,13 +23,13 @@ const ContentAbout: React.FC<ContentAboutProps> = ({
 }) => {
   return (
     <div className="dark:bg-gray-100 dark:text-gray-800 mb-8">
-      <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm bg-sky-950 dark:bg-gray-50">
+      <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm bg-sky-950 ">
         <div className="flex items-center justify-between">
           <span className="text-sm dark:text-gray-600">{date}</span>
           <a
             rel="noopener noreferrer"
             href="#"
-            className="px-2 py-1 font-bold rounded dark:bg-violet-600 dark:text-gray-50"
+            className="px-2 py-1 font-bold rounded dark:bg-violet-600"
           >
             {category}
           </a>

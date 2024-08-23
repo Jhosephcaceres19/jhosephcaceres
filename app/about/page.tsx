@@ -94,7 +94,7 @@ export default function About() {
             alt="Jose Caceres Aramayo"
             className="w-full h-52 sm:h-[10%] object-cover rounded-xl"
           />
-          <div className="p-6 pb-12 m-4 mx-auto -mt-16 bg-sky-950 space-y-6 lg:max-w-2xl sm:px-10 sm:mx-12 lg:rounded-xl dark:bg-gray-50 dark:text-gray-800">
+          <div className="p-6 pb-12 m-4 mx-auto -mt-16 bg-sky-950 space-y-6 lg:max-w-2xl sm:px-10 sm:mx-12 lg:rounded-xl">
             <div className="space-y-2">
               <a
                 rel="noopener noreferrer"

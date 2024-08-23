@@ -56,7 +56,7 @@ export default function Page() {
           <h3 className={`${coiny.className} text-2xl font-bold leading-none sm:text-5xl`}>
             PORTAFOLIO
           </h3>
-          <p className="max-w-2xl dark:text-gray-600 text-center">
+          <p className="max-w-2xl dark:text-white text-center">
             Conoce mi portafolio. Estos son algunos de los proyectos en los que
             he trabajado como Desarrollador web.
           </p>
