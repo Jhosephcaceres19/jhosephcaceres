@@ -38,7 +38,7 @@ export default function ContactPage() {
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-black via-sky-900 to-sky-600 text-sky-300">
       <Navbar />
       <div className="mt-20">
-        <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-100 dark:text-gray-800">
+        <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32">
           <div className="flex flex-col justify-between">
             <div className="space-y-2">
               <h2 className={`${coiny.className} text-4xl font-bold leading-tight lg:text-5xl`}>
