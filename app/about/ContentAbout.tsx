@@ -22,14 +22,14 @@ const ContentAbout: React.FC<ContentAboutProps> = ({
   authorImage,
 }) => {
   return (
-    <div className="dark:bg-gray-100 dark:text-gray-800 mb-8">
+    <div className="dark:bg-gray-100 mb-8">
       <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm bg-sky-950 ">
         <div className="flex items-center justify-between">
-          <span className="text-sm dark:text-gray-600">{date}</span>
+          <span className="text-sm ">{date}</span>
           <a
             rel="noopener noreferrer"
             href="#"
-            className="px-2 py-1 font-bold rounded dark:bg-violet-600"
+            className="px-2 py-1 font-bold rounded "
           >
             {category}
           </a>
@@ -48,7 +48,7 @@ const ContentAbout: React.FC<ContentAboutProps> = ({
           <a
             rel="noopener noreferrer"
             href="#"
-            className="hover:underline dark:text-violet-600"
+            className="hover:underline "
           >
             Read more
           </a>
@@ -64,9 +64,9 @@ const ContentAbout: React.FC<ContentAboutProps> = ({
                 width={400}
                 height={400}
                 alt="avatar"
-                className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500"
+                className="object-cover w-10 h-10 mx-4 rounded-full "
               />
-              <span className="hover:underline dark:text-gray-600">
+              <span className="hover:underline">
                 {author}
               </span>
             </a>

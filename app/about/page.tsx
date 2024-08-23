@@ -115,7 +115,7 @@ export default function About() {
                 </a>
               </p>
             </div>
-            <div className="dark:text-gray-800">
+            <div className="">
               <p className="text-justify">
                 Soy un estudiante de Ingeniería Informática apasionado por el
                 desarrollo web y las tecnologías emergentes. A lo largo de mi
