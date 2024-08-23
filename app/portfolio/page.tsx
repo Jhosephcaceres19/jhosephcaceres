@@ -11,7 +11,7 @@ export default function Page() {
       name: "Pagina netflix",
       title:
         "Sitio web para buscar y ver información detallada sobre películas, incluyendo sinopsis, fechas de estreno, géneros y pósters. Implementación de funcionalidades avanzadas de búsqueda, filtrado por género y visualización de trailers, carrusel de imágenes con swiper.",
-      web:"https://project-movie-self.vercel.app/",
+      web: "https://project-movie-self.vercel.app/",
       githubUrl: "https://github.com/Jhosephcaceres19/project-movie",
     },
     {
@@ -19,7 +19,7 @@ export default function Page() {
         "https://res.cloudinary.com/dcyr5qkhg/image/upload/v1724354536/bjbjuqriuxpg2eqhdzgb.png",
       name: "Pagina de criptomoneda",
       title: "Sitio web para consultar información sobre criptomonedas en tiempo real, utilizando una API de criptomonedas. Implementación de gráficos de precios, noticias relacionadas y funcionalidades avanzadas de búsqueda.",
-      web:"https://proyecto-react-criptomoneda.vercel.app/",
+      web: "https://proyecto-react-criptomoneda.vercel.app/",
       githubUrl: "https://github.com/Jhosephcaceres19/proyecto-react-criptomoneda",
     },
     {
@@ -27,7 +27,7 @@ export default function Page() {
         "https://res.cloudinary.com/dcyr5qkhg/image/upload/v1724354536/ul3txtguq1dwkg8k2anz.png",
       name: "Pagina web Pyday cochabamba",
       title: "Gestión y mantenimiento del sitio web oficial del evento PyDay 2024, asegurando su correcto funcionamiento y actualización continua.",
-      web:"https://dev.pyday2024.pages.dev/",
+      web: "https://dev.pyday2024.pages.dev/",
       githubUrl: "https://github.com/pydaycbba/PyDay2024",
     },
     {
@@ -35,7 +35,7 @@ export default function Page() {
         "https://res.cloudinary.com/dcyr5qkhg/image/upload/v1724430883/joseportfolio_u6rkmu.png",
       name: "Portafolio Web",
       title: "Sitio web de mi portafolio con datos de contacto y skill importantes. Tecnologia usada Next.js",
-      web:"https://jhosephcaceres.vercel.app/",
+      web: "https://jhosephcaceres.vercel.app/",
       githubUrl: "https://github.com/Jhosephcaceres19/jhosephcaceres",
     },
     {
@@ -43,7 +43,7 @@ export default function Page() {
         "https://res.cloudinary.com/dcyr5qkhg/image/upload/v1724354555/oiaidwaxonfa8klsztri.png",
       name: "Pagina de Watpro",
       title: "Sitio web de informacion relevante para una empresa de tratamiento de agua.",
-      web:"https://wat-pro-2.vercel.app/",
+      web: "https://wat-pro-2.vercel.app/",
       githubUrl: "https://github.com/Jhosephcaceres19/WatPro.2",
     },
   ];
@@ -62,7 +62,7 @@ export default function Page() {
           </p>
         </div>
         <div className="max-w-screen-2xl px-4 py-16 mx-auto sm:px-4 lg:px-1 lg:py-24">
-          <div className="grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-y-16">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
             {contentData.map((item, index) => (
               <CardPortfolio
                 key={index}
