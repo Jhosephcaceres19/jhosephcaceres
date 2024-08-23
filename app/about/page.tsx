@@ -14,8 +14,8 @@ export default function About() {
       description:
         "Participación activa en eventos y actividades de la comunidad de Python Cochabamba.",
       author: "Python Cochabamba",
-      imageSrc: "/portada.jpeg",
-      authorImage: "/portada.jpeg",
+      imageSrc: "",
+      authorImage: "https://3dtownplus.com/wp-content/uploads/2022/09/LOTR.jpg",
     },
     {
       date: "Noviembre 2022 - ahora",
@@ -25,7 +25,7 @@ export default function About() {
         "Participación activa en eventos y actividades de la comunidad.",
       author: "HackLab",
       imageSrc: "",
-      authorImage: "/portada.jpeg",
+      authorImage: "https://3dtownplus.com/wp-content/uploads/2022/09/LOTR.jpg",
     },
     {
       date: "Noviembre 2022 - ahora",
@@ -35,7 +35,7 @@ export default function About() {
         "Participación activa en eventos y actividades de la comunidad",
       author: "Mujeres Tics",
       imageSrc: "/portada.jpeg",
-      authorImage: "/portada.jpeg",
+      authorImage: "https://3dtownplus.com/wp-content/uploads/2022/09/LOTR.jpg",
     },
     {
       date: "Enero 2023 - ahora",
@@ -45,7 +45,7 @@ export default function About() {
         "Colaboración y apoyo en la comunidad de mujeres en tecnología.",
       author: "Pyladies Lapaz",
       imageSrc: "/portada.jpeg",
-      authorImage: "/portada.jpeg",
+      authorImage: "https://3dtownplus.com/wp-content/uploads/2022/09/LOTR.jpg",
     },
     {
       date: "Marzo 2023 - ahora",
@@ -55,7 +55,7 @@ export default function About() {
         "Colaboración y apoyo en la comunidad de mujeres en tecnología.",
       author: "Pyladies Cochabamba",
       imageSrc: "/portada.jpeg",
-      authorImage: "/portada.jpeg",
+      authorImage: "https://3dtownplus.com/wp-content/uploads/2022/09/LOTR.jpg",
     },
     {
       date: "Abril 2023 - ahora",
@@ -65,7 +65,7 @@ export default function About() {
         "Organización como subcoordinador y participación en eventos y actividades para promover la ciencia y la tecnología.",
       author: "Nos gusta la ciencia",
       imageSrc: "/portada.jpeg",
-      authorImage: "/portada.jpeg",
+      authorImage: "https://3dtownplus.com/wp-content/uploads/2022/09/LOTR.jpg",
     },
     {
       date: "Diciembre 2023",
@@ -75,7 +75,7 @@ export default function About() {
         "Asesoramiento y guía a estudiantes en un curso de Cisco, ayudándoles a desarrollar sus habilidades técnicas y profesionales con la comunidad de mujeres tic Bolivia.",
       author: "Mentor",
       imageSrc: "/portada.jpeg",
-      authorImage: "/portada.jpeg",
+      authorImage: "https://3dtownplus.com/wp-content/uploads/2022/09/LOTR.jpg",
     },
     // Agrega aquí otros 4 objetos con la misma estructura
   ];
