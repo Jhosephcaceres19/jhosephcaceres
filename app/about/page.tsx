@@ -3,7 +3,6 @@ import React from "react";
 import Navbar from "../navbar";
 import Image from "next/image";
 import ContentAbout from "./ContentAbout";
-import { describe } from "node:test";
 import { coiny } from "../utils/fonts";
 
 export default function About() {
