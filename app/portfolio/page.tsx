@@ -32,6 +32,14 @@ export default function Page() {
     },
     {
       imageSrc:
+        "https://res.cloudinary.com/dcyr5qkhg/image/upload/v1724430883/joseportfolio_u6rkmu.png",
+      name: "Portafolio Web",
+      title: "Sitio web de mi portafolio con datos de contacto y skill importantes. Tecnologia usada Next.js",
+      web:"https://jhosephcaceres.vercel.app/",
+      githubUrl: "https://github.com/Jhosephcaceres19/jhosephcaceres",
+    },
+    {
+      imageSrc:
         "https://res.cloudinary.com/dcyr5qkhg/image/upload/v1724354555/oiaidwaxonfa8klsztri.png",
       name: "Pagina de Watpro",
       title: "Sitio web de informacion relevante para una empresa de tratamiento de agua.",
