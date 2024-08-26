@@ -38,22 +38,22 @@ export default function ContactPage() {
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-black via-sky-900 to-sky-600 text-sky-300">
       <Navbar />
       <div className="mt-20">
-        <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32">
-          <div className="flex flex-col justify-between">
+        <div className="grid max-w-screen-xl grid-cols-1 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32">
+          <div className="flex flex-col justify-between items-center">
             <div className="space-y-2">
-              <h2 className={`${coiny.className} text-4xl font-bold leading-tight lg:text-5xl`}>
+              <h2 className={`${coiny.className} text-4xl text-center font-bold leading-tight lg:text-5xl`}>
                 Contacta conmigo
               </h2>
-              <div>
+              <div className='text-center text-md'>
                 Email: caceresjose1929@gmail.com
               </div>
             </div>
             <Image
-              src="https://res.cloudinary.com/dcyr5qkhg/image/upload/v1724268197/cmj6z6scfg6fs0iixsxe.png"
+              src="https://res.cloudinary.com/dcyr5qkhg/image/upload/v1724695040/456380104_2472919269575647_5686340869483867173_n_ccoidv.jpg"
               alt="Contact Image"
               width={400}
               height={600}
-              className="p-6 h-[24rem] md:h-[26rem] object-cover"
+              className="p-6 h-[20rem] md:h-[24rem]"
             />
           </div>
           <form className="space-y-6" ref={form} onSubmit={sendEmail}>
