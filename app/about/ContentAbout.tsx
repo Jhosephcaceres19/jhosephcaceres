@@ -22,7 +22,7 @@ const ContentAbout: React.FC<ContentAboutProps> = ({
   authorImage,
 }) => {
   return (
-    <div className="dark:bg-gray-100 mb-8">
+    <div className=" mb-8">
       <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm bg-sky-950 ">
         <div className="flex items-center justify-between">
           <span className="text-sm ">{date}</span>
