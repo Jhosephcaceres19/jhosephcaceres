@@ -1,36 +1,59 @@
 "use client";
-import { useRef } from 'react';
-import Navbar from '../navbar';
-import Image from 'next/image';
-import { coiny } from '../utils/fonts';
-import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+import Navbar from "../navbar";
+import Image from "next/image";
+import { coiny } from "../utils/fonts";
+import emailjs from "@emailjs/browser";
+import { Field, Formik, Form, ErrorMessage } from "formik";
+import * as Yup from "yup";
 
 export default function ContactPage() {
   const form = useRef<HTMLFormElement | null>(null);
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const getValidationSchema = () => {
+    return Yup.object({
+      user_name: Yup.string()
+        .max(15, "El nombre debe tener 15 caracteres")
+        .required("Requerido"),
+      user_email: Yup.string()
+        .email("Ingrese un email correcto")
+        .required("Requerido"),
+      affair: Yup.string()
+        .max(50, "El asunto debe tener 50 caracteres")
+        .required("Requerido"),
+      message: Yup.string()
+        .max(200, "El mensaje debe tener 200 caracteres")
+        .required("Requerido"),
+    });
+  };
 
-    if(form.current){
+  const sendEmail = (
+    values: any,
+    { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }
+  ) => {
+    if (form.current) {
       emailjs
-      .sendForm(
-        'service_1dc6rhb', 
-        'template_ec0k0hp', 
-        form.current, 
-        'JRwk_eutmA9Tg6f7s'  // Aquí pasas la clave pública directamente
-      )
-      .then(
-        () => {
-          console.log('SUCCESS!');
-          alert("Correo enviado")
-          form.current?.reset();
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        }
-      );
-    }else {
+        .sendForm(
+          "service_1dc6rhb",
+          "template_ec0k0hp",
+          form.current,
+          "JRwk_eutmA9Tg6f7s"
+        )
+        .then(
+          () => {
+            console.log("SUCCESS!");
+            alert("Correo enviado");
+            form.current?.reset();
+            setSubmitting(false);
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+            setSubmitting(false);
+          }
+        );
+    } else {
       console.error("The form reference is not set");
+      setSubmitting(false);
     }
   };
 
@@ -39,12 +62,14 @@ export default function ContactPage() {
       <Navbar />
       <div className="mt-20">
         <div className="grid max-w-screen-xl grid-cols-1 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32">
-          <div className="flex flex-col justify-between items-center">
+          <div className="flex flex-col justify-start items-center">
             <div className="space-y-2">
-              <h2 className={`${coiny.className} text-4xl text-center font-bold leading-tight lg:text-5xl`}>
+              <h2
+                className={`${coiny.className} text-4xl text-center font-bold leading-tight lg:text-5xl`}
+              >
                 Contacta conmigo
               </h2>
-              <div className='text-center text-md'>
+              <div className="text-center text-md">
                 Email: caceresjose1929@gmail.com
               </div>
             </div>
@@ -56,61 +81,93 @@ export default function ContactPage() {
               className="p-6 h-[20rem] md:h-[24rem]"
             />
           </div>
-          <form className="space-y-6" ref={form} onSubmit={sendEmail}>
-            <div>
-              <label htmlFor="name" className="text-sm">
-                TU NOMBRE
-              </label>
-              <input
-                id="name"
-                name="user_name"
-                type="text"
-                placeholder=""
-                className="w-full p-3 rounded dark:bg-gray-100 text-black"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="text-sm">
-                TU EMAIL
-              </label>
-              <input
-                id="email"
-                name="user_email"
-                type="email"
-                placeholder=""
-                className="w-full p-3 rounded dark:bg-gray-100 text-black"
-              />
-            </div>
-            <div>
-              <label htmlFor="asunto" className="text-sm">
-                ASUNTO
-              </label>
-              <input
-                id="asunto"
-                name="affair"
-                type="text"
-                placeholder=""
-                className="w-full p-3 rounded dark:bg-gray-100 text-black"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="text-sm">
-                MENSAJE
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={3}
-                className="w-full p-3 rounded dark:bg-gray-100 text-black"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="w-full p-3 text-xl text-cyan-950 bg-sky-400 hover:bg-sky-500 hover:text-white font-bold tracking-wide uppercase rounded "
-            >
-              Enviar Mensaje
-            </button>
-          </form>
+          <Formik
+            initialValues={{
+              user_name: "",
+              user_email: "",
+              affair: "",
+              message: "",
+            }}
+            validationSchema={getValidationSchema()}
+            onSubmit={sendEmail}
+          >
+            <Form ref={form} className="space-y-6">
+              <div>
+                <label htmlFor="name" className="text-sm">
+                  TU NOMBRE
+                </label>
+                <Field
+                  id="name"
+                  name="user_name"
+                  type="text"
+                  placeholder=""
+                  className="w-full p-3 rounded dark:bg-gray-100 text-black"
+                />
+                <ErrorMessage
+                  name="user_name"
+                  component="div"
+                  className="text-red-500 text-sm"
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="text-sm">
+                  TU EMAIL
+                </label>
+                <Field
+                  id="email"
+                  name="user_email"
+                  type="email"
+                  placeholder=""
+                  className="w-full p-3 rounded dark:bg-gray-100 text-black"
+                />
+                <ErrorMessage
+                  name="user_email"
+                  component="div"
+                  className="text-red-500 text-sm"
+                />
+              </div>
+              <div>
+                <label htmlFor="asunto" className="text-sm">
+                  ASUNTO
+                </label>
+                <Field
+                  id="asunto"
+                  name="affair"
+                  type="text"
+                  placeholder=""
+                  className="w-full p-3 rounded dark:bg-gray-100 text-black"
+                />
+                <ErrorMessage
+                  name="affair"
+                  component="div"
+                  className="text-red-500 text-sm"
+                />
+              </div>
+              <div>
+                <label htmlFor="message" className="text-sm">
+                  MENSAJE
+                </label>
+                <Field
+                  as="textarea"
+                  id="message"
+                  name="message"
+                  rows={3}
+                  className="w-full p-3 rounded dark:bg-gray-100 text-black"
+                ></Field>
+                <ErrorMessage
+                  name="message"
+                  component="div"
+                  className="text-red-500 text-sm"
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full p-3 text-xl text-cyan-950 bg-sky-400 hover:bg-sky-500 hover:text-white font-bold tracking-wide uppercase rounded"
+              >
+                Enviar Mensaje
+              </button>
+            </Form>
+          </Formik>
         </div>
       </div>
     </div>
