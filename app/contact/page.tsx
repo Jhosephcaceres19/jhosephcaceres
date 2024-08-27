@@ -176,7 +176,7 @@ export default function ContactPage() {
       </div>
       <div className="w-full px-8 mb-8">
         <Map
-          mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_KEY}
+          mapboxAccessToken="pk.eyJ1Ijoiamhvc2VwaDE5IiwiYSI6ImNtMGNtajY2cjAwZ20ycG9oOHQ5YWQ2NjIifQ.6e8m254IeBKvJbQisdxMOA"//{process.env.NEXT_PUBLIC_MAPBOX_API_KEY}
           initialViewState={{
             longitude: -66.156798,
             latitude: -17.393801,
