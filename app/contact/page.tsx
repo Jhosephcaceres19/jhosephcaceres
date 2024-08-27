@@ -6,6 +6,10 @@ import { coiny } from "../utils/fonts";
 import emailjs from "@emailjs/browser";
 import { Field, Formik, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import Map from "react-map-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
+import { NavigationControl, Marker, Popup } from "react-map-gl";
+import { Purple_Purse } from "next/font/google";
 
 export default function ContactPage() {
   const form = useRef<HTMLFormElement | null>(null);
@@ -42,7 +46,7 @@ export default function ContactPage() {
         .then(
           () => {
             console.log("SUCCESS!");
-            alert("Correo enviado");
+            alert("Correo enviado a Jose");
             form.current?.reset();
             setSubmitting(false);
           },
@@ -58,10 +62,10 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-black via-sky-900 to-sky-600 text-sky-300">
+    <div className="flex flex-col items-center min-h-screen bg-gradient-to-b from-black via-sky-900 to-sky-600 text-sky-300">
       <Navbar />
-      <div className="mt-20">
-        <div className="grid max-w-screen-xl grid-cols-1 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32">
+      <div className="mt-20 flex flex-col">
+        <div className="grid max-w-screen-xl grid-cols-1 px-8 pb-10 mx-auto rounded-lg md:gap-8 lg:gap-10 xl:gap-20 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32">
           <div className="flex flex-col justify-start items-center">
             <div className="space-y-2">
               <h2
@@ -169,6 +173,46 @@ export default function ContactPage() {
             </Form>
           </Formik>
         </div>
+      </div>
+      <div className="w-full px-8 mb-8">
+        <Map
+          mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_KEY}
+          initialViewState={{
+            longitude: -66.156798,
+            latitude: -17.393801,
+            zoom: 14,
+          }}
+          style={{ width: "100%", height: "40vh", borderRadius: "20px" }}
+          mapStyle="mapbox://styles/mapbox/streets-v12"
+        >
+          <Marker
+            longitude={-66.156798}
+            latitude={-17.393801}
+            offset={[ -20, -10 ]}
+          >
+            <Image
+              src="https://res.cloudinary.com/dcyr5qkhg/image/upload/v1724176942/JHOSEPH_u3n1pb.jpg"
+              alt="Marker Icon"
+              width={400}
+              height={400}
+              style={{ width: "40px", height: "40px", borderRadius:"100%" }}
+            />
+          </Marker>
+
+          <Popup
+            longitude={-66.156798}
+            latitude={-17.393801}
+            closeButton={true}
+            closeOnClick={false}
+            anchor="top"
+            className="mt-4 "
+          >
+            <div className="text-center text-xl text-black">
+              <h3>Cochabamba, Bolivia</h3>
+            </div>
+          </Popup>
+          <NavigationControl position="top-right" />
+        </Map>
       </div>
     </div>
   );
