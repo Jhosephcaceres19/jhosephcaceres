@@ -82,7 +82,7 @@ export default function ContactPage() {
               alt="Contact Image"
               width={400}
               height={600}
-              className="p-6 h-[20rem] md:h-[24rem]"
+              className="p-6 h-[20rem] md:h-[24rem] "
             />
           </div>
           <Formik
@@ -207,7 +207,7 @@ export default function ContactPage() {
             anchor="top"
             className="mt-4 "
           >
-            <div className="text-center text-xl text-black">
+            <div className="text-center text-md xl:text-xl text-black">
               <h3>Cochabamba, Bolivia</h3>
             </div>
           </Popup>

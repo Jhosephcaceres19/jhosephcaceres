@@ -23,6 +23,7 @@
     "react-dom": "^18.3.1",
     "react-map-gl": "^7.1.7",
     "swiper": "^11.1.10",
+    "vercel": "^37.1.2",
     "yup": "^1.4.0"
   },
   "devDependencies": {
