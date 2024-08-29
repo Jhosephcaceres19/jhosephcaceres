@@ -32,7 +32,7 @@ export default function Sidebar() {
       <div
         className={`${
           !open && "hidden"
-        } bg-sky-600/50 min-h-screen w-full fixed top-0 left-0 right-0 backdrop-blur-sm z-40`}
+        } bg-sky-600/5 min-h-screen w-full fixed top-0 left-0 right-0 backdrop-blur-sm z-40`}
         onClick={() => setOpen(false)}
       ></div>
 
@@ -40,11 +40,11 @@ export default function Sidebar() {
       <div
         className={`${
           open ? "w-64" : "w-0"
-        } bg-cyan-600 min-h-screen fixed top-0 right-0 z-50 transition-width duration-300 overflow-hidden`}
+        } bg-cyan-600 pt-2 h-auto rounded-bl-2xl fixed top-0 right-0 z-50 transition-width duration-300 overflow-hidden`}
       >
-        <div className="pt-3 text-white">
+        <div className=" text-white top-0">
           <button
-            className="ml-[205px] mt-2 bg-sky-300 rounded-full mb-10"
+            className="ml-[200px] mt-2 bg-sky-700 p-1 rounded-full mb-10"
             onClick={() => setOpen(false)}
           >
             <svg
@@ -52,7 +52,7 @@ export default function Sidebar() {
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
-              stroke="blue"
+              stroke="white"
               className="w-8 h-8"
             >
               <path
