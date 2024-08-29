@@ -44,7 +44,7 @@ export default function Sidebar() {
       >
         <div className=" text-white top-0">
           <button
-            className="ml-[200px] mt-2 bg-sky-700 p-1 rounded-full mb-10"
+            className="ml-[200px] mt-2 bg-sky-700 p-1 rounded-full mb-5"
             onClick={() => setOpen(false)}
           >
             <svg
@@ -62,31 +62,33 @@ export default function Sidebar() {
               />
             </svg>
           </button>
+          <div className="mb-5">
           <Link href="/">
-            <div className="text-center text-xl hover:bg-orange-400 cursor-pointer p-4">
+            <div className="text-center text-xl hover:bg-orange-400 cursor-pointer p-4 rounded-xl">
               Inicio
             </div>
           </Link>
           <Link href="/about">
-            <div className="text-center text-xl hover:bg-orange-400 cursor-pointer p-4">
+            <div className="text-center text-xl hover:bg-orange-400 cursor-pointer p-4 rounded-xl">
               Sobre mi
             </div>
           </Link>
           <Link href="/skill">
-            <div className="text-center text-xl hover:bg-orange-400 cursor-pointer p-4">
+            <div className="text-center text-xl hover:bg-orange-400 cursor-pointer p-4 rounded-xl">
               Habilidades
             </div>
           </Link>
           <Link href="/portfolio">
-            <div className="text-center text-xl hover:bg-orange-400 cursor-pointer p-4">
+            <div className="text-center text-xl hover:bg-orange-400 cursor-pointer p-4 rounded-xl">
               Portafolio
             </div>
           </Link>
           <Link href="/contact">
-            <div className="text-center text-xl hover:bg-orange-400 cursor-pointer p-4">
+            <div className="text-center text-xl hover:bg-orange-400 cursor-pointer p-4 rounded-xl">
               Contacto
             </div>
           </Link>
+          </div>
         </div>
       </div>
     </div>
