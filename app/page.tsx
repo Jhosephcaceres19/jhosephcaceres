@@ -15,7 +15,7 @@ export default function Home() {
     <div className="relative min-h-screen bg-gradient-to-b from-black via-sky-900 to-sky-600 text-white">
       <Navbar />
       <div className=" inset-0 flex flex-col mt-30 gap-4 lg:gap-0 md:mt-0 md:absolute justify-center text-start w-full items-center lg:flex-row-reverse md:content-center">
-        <div className="">
+        <div className="w-[250px] md:w-[300px] lg:rounded-lg xl:w-[400px]">
           <Image
             src={
               "https://res.cloudinary.com/dcyr5qkhg/image/upload/v1724176942/JHOSEPH_u3n1pb.jpg"
@@ -23,7 +23,7 @@ export default function Home() {
             width={200}
             height={200}
             alt="Jose Caceres Aramayo"
-            className="rounded-full mt-36 md:mt-0 md:w-[300px] lg:rounded-lg xl:w-[400px]"
+            className="rounded-md w-full mt-20 md:mt-0 "
           />
         </div>
         <div className="flex flex-col  text-center justify-center gap-4 lg:w-[60%] lg:text-start ">

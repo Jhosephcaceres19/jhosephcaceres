@@ -44,7 +44,7 @@ export default function Sidebar() {
       >
         <div className="pt-3 text-white">
           <button
-            className="ml-56 mt-4 mb-10"
+            className="ml-[205px] mt-2 bg-sky-300 rounded-full mb-10"
             onClick={() => setOpen(false)}
           >
             <svg
@@ -52,8 +52,8 @@ export default function Sidebar() {
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
-              stroke="white"
-              className="w-6 h-6"
+              stroke="blue"
+              className="w-8 h-8"
             >
               <path
                 strokeLinecap="round"
