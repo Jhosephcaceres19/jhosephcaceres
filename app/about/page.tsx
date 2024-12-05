@@ -117,28 +117,7 @@ export default function About() {
             </div>
             <div className="">
               <p className="text-justify">
-                Soy un estudiante de Ingeniería Informática apasionado por el
-                desarrollo web y las tecnologías emergentes. A lo largo de mi
-                formación académica, he adquirido un sólido conocimiento en
-                lenguajes de programación como TypeScript, JavaScript, Python,
-                Go y Java, y he trabajado en diversos proyectos que abarcan
-                desde la creación de sitios web dinámicos hasta la
-                implementación de sistemas backend eficientes. Mi enfoque se
-                centra en construir soluciones web intuitivas y escalables,
-                utilizando herramientas y frameworks modernos como React,
-                Node.js, y Express. Además, me interesa profundamente la
-                ciberseguridad y el software libre, lo que me motiva a estar en
-                constante aprendizaje para mantenerme al día con las mejores
-                prácticas y tendencias del sector. Mi experiencia en proyectos
-                colaborativos me ha enseñado la importancia de la comunicación
-                efectiva y el trabajo en equipo, habilidades que considero
-                esenciales para el éxito en cualquier entorno de desarrollo.
-                Estoy en busca de oportunidades donde pueda aplicar y expandir
-                mis conocimientos, contribuyendo al crecimiento y la innovación
-                de la empresa. Si buscas un desarrollador web comprometido, con
-                una mentalidad proactiva y una pasión por aprender, estaría
-                encantado de ser parte de tu equipo y ayudar a llevar tus
-                proyectos al siguiente nivel.
+              Desarrollador Full Stack Junior con formación en ingeniería informática. Tengo experiencia en el desarrollo de aplicaciones web, tanto en frontend como en backend, con un enfoque en la creación de soluciones escalables y eficientes. Poseo habilidades técnicas en varios lenguajes de programación y frameworks modernos, y manejo metodologías ágiles, control de versiones y herramientas de colaboración. Mi enfoque está en el aprendizaje continuo y la adaptabilidad para contribuir de manera efectiva en entornos de desarrollo dinámicos.
               </p>
             </div>
           </div>
